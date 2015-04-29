@@ -1,0 +1,141 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Economic Ties that Bind}
+\subtitle{Economic Integration and its Influence on Civil War Contagion}
+\author{Kelly McCaskey} 
+\institute{University at Buffalo, SUNY}
+\date{April 29th, 2015} 
+
+\frame{\titlepage} 
+
+\frame{\frametitle{The question}
+\begin{itemize}
+\item If economic integration can bring interstate peace, can it also bring intrastate peace? \pause 
+\item Not so much.
+\end{itemize} 
+}
+
+\frame{\frametitle{Geographic proximity}
+\begin{itemize}
+\item Negative consequences are rarely confined to the state experiencing war\pause
+\item Transnational ties \pause
+\item Economic effects 
+\end{itemize} 
+}
+
+\frame{\frametitle{Interstate peace through interdependence}
+\begin{itemize}
+\item Economic ties reflect the economic cost of war \pause
+\item Measure of the value of maintaining the status quo \pause
+\item Indicator of compatibility \pause
+\item Cheap talk
+\end{itemize} 
+}
+
+\frame{\frametitle{Intrastate peace through interdependence?}
+\begin{itemize}
+\item Inhibited economic growth \pause
+\item Indicator of compatibility\pause
+\item The cost of rebellion 
+\end{itemize} 
+}
+
+\frame{\frametitle{Hypothesis}
+\begin{itemize}
+\item States who trade heavily with their civil war-experiencing neighbor are more likely to also experience a civil war than those that do not. 
+\end{itemize} 
+}
+
+\frame{\frametitle{Data + model}
+\begin{itemize}
+\item 2603 civil war-neighbor state-years from 1949 to 2006 \pause
+\item DV:
+\begin{itemize}
+\item Civil war onset
+\begin{itemize}
+\item Uppsala/PRIO Conflict Data Set \pause
+\end{itemize}
+\end{itemize}
+\item IV:
+\begin{itemize}
+\item Trade flows
+\begin{itemize}
+\item Imports from neighbor as a percentage of total imports
+\item Exports to neighbor as a percentage of total exports
+\item COW Trade Data \pause
+\end{itemize}
+\item Neighbor experiencing civil war
+\begin{itemize}
+\item Uppsala/PRIO Conflict Data Set 
+\item COW Contiguity Data\pause
+\end{itemize}
+\end{itemize}
+\item MLE w/ 2 logit models
+\end{itemize}
+}
+
+\frame{\frametitle{Preliminary results }
+\begin{table}
+\begin{center}
+\begin{tabular}{l c c }
+\hline
+                 & 1 & 2 \\
+\hline
+Constant      & $0.83^{***}$ & $1.02^{***}$ \\
+                 & $(0.16)$     & $(0.17)$     \\
+Imports \%               & $3.49^{***}$ &              \\
+                 & $(0.96)$     &              \\
+Exports \%              &              & $1.76^{***}$ \\
+                 &              & $(0.49)$     \\         
+Civil War Neighbor & $0.34^{*}$   & $0.16$       \\
+                 & $(0.16)$     & $(0.17)$     \\
+Contiguity         & $0.33^{***}$ & $0.33^{***}$ \\
+                 & $(0.05)$     & $(0.05)$     \\
+\hline
+%AIC              & 2100.44      & 2060.08      \\
+%BIC              & 2123.90      & 2083.54      \\
+%Log Likelihood   & -1046.22     & -1026.04     \\
+%Deviance         & 2092.44      & 2052.08      \\
+Num. obs.        & 2603         & 2603         \\
+\hline
+\multicolumn{3}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{Logistic Regression}
+\label{table:coefficients}
+\end{center}
+\end{table}
+}
+
+\frame{\frametitle{First differences}
+\begin{figure}
+\centering
+\includegraphics[scale = 0.48]{tradeflow-fd.png}
+\end{figure}
+}
+
+\frame{\frametitle{Risk ratios}
+\begin{figure}
+\centering
+\includegraphics[scale = 0.48]{tradeflow-rr.png}
+\end{figure}
+}
+
+\frame{\frametitle{Future research}
+\begin{itemize}
+\item Control variables \pause
+\item Include other forms of market integration \pause
+\item Disaggregate trade flows into factor endowments
+\end{itemize}
+}
+
+\frame{\frametitle{Why is this important?}
+\begin{itemize}
+\item Represents a vulnerability 
+\end{itemize}
+}
+
+\end{document}
+

@@ -1,0 +1,169 @@
+%
+\documentclass[12pt,letterpaper]{article}
+
+% The usual packages
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{ntheorem}
+\usepackage{longtable}
+\usepackage{indentfirst}
+\usepackage{qtree}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullpage}
+\usepackage{endnotes}
+\usepackage[sort]{natbib}
+\citestyle{agsm}
+\renewcommand\harvardand{and}
+\usepackage{breakcites}
+\usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{rotating}
+
+% Math
+\newtheorem{hyp}{Hypothesis} 
+\newcounter{subhyp} 
+\newcommand{\subhyp}{ 
+  \setcounter{subhyp}{0} 
+  \renewcommand\thehyp{\protect\stepcounter{subhyp} 
+  \arabic{hyp}\alph{subhyp}\protect\addtocounter{hyp}{-1}} 
+} 
+\newcommand{\normhyp}{ 
+  \renewcommand\thehyp{\arabic{hyp}} 
+  \stepcounter{hyp} 
+} 
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{claim}{Claim}
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+% enable comments in pdf
+\newcommand{\kelly}[1]{\textcolor{blue}{#1}}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+%% Draft
+% Title
+\begin{document}
+\begin{center}
+{\LARGE Economic Ties That Bind: Economic Integration and its Influence on Civil War Contagion}\\\vspace{2mm}
+\vspace{10mm}
+Kelly McCaskey\symbolfootnote[1]{Kelly McCaskey is a Ph.D. student in the Department of Political Science at the University at Buffalo, SUNY (kellymcc@buffalo.edu). 
+%thanks to Jake Kathman
+%\\\vspace{3mm}
+}
+\end{center}
+
+% Abstract
+\newpage
+\begin{quote}
+\begin{center} Abstract\end{center}
+abstract - 150 words or so. Does a greater level of economic dependence prevent cross-border spillovers of civil war? No.
+\end{quote}
+
+
+% Body
+\newpage
+\doublespace
+\subsection*{Introduction}
+If economic integration can bring interstate peace, can it also bring intrastate peace? If we believe in the classical trade theory, we also know, then, that states trade with each other because they believe that they are each better off than if they did not trade. It is not the act of trade, however, that is the primary deterrent from conflict, but rather, the threat of losing the economic benefits associated with trade. As conflict is likely to interrupt trade flows, the lost value becomes an additional cost of conflict \citep{DorussenWard2010}. This seems obvious as a deterrent to interstate war but how might attempting to avoid this anticipated additional cost of conflict have an unexpected negative effect on the onset of civil war?
+
+To start, trade can represent similarities between trading partners which make each state less inclined toward initiating conflict with the other. As \citet{OnealRussett1997} describe, ``economic interdependence reinforces structural constraints and liberal norms by creating transnational ties that encourage accommodation rather than conflict," (p. 269). Trade creates transnational ties but the relationship can also work in both directions, as in, transnational ties can influence the state to engage in more trade. Shared characteristics often translate into shared policy preferences which often have an ameliorative effect \citep{Gartzke2007}. However, the opposite appears to be true for intrastate war; shared characteristics make it easier for civil war contagion to occur because the consequences of civil war are not isolated within the state experiencing the civil war. 
+
+As civil war rages in one nation, geographical proximity in combination with transnational ties create pathways and opportunities for insurgency to spread. Keeping the focus on the economic causes and effects of civil war, \citet{MurdochSandler2002} find that a civil war in one country is highly related to a decrease in economic growth in its neighbors. Additionally, low or decreasing economic growth is typically associated with the onset of civil war, primarily because both can represent forgone income \citep{CollierHoeffler2004}. Both inter- and intrastate war disrupt trade and other economic activities which can then the lower income per capita thus causing citizens to look for another source of income. 
+
+This might also lead us to believe that states will be sensitive to issues experienced by trading partners, particularly those with which they have a high volume of trade. Following this logic, economic shocks felt in one state should also be felt in its close trading partners. To start, a state that is unable to produce a product because of some sort of domestic issue also cannot, of course, export the product. The importing state, then, obviously cannot import this product, potentially hurting both states' economies. In reverse, the importing state is experiencing a domestic issue and cannot import at the same rate, the exporting state will may experience financial consequences for not producing efficiently. This can become a problem when the economies of two states become increasingly integrated; this integration ensures that havoc felt by one economy travels through trade networks \citep{Gartzke2007}.  
+
+Theories about the onset of civil war can be categorized as either by greed or by grievance. Grievance theories state that rebellions occur when the grievances of a particular subset of the population become sufficiently severe that they want to take part in violent protest while greed theories describe situations in which an opportunity has been presented that rebel groups are able to take what they want. Poor economic conditions can create opportunities for rebels to build support for their cause. Additionally, poor economic conditions also create objective grievances also associated with the onset of a civil war. This leads me to believe that the more economically dependent one state is upon its neighbor, the more likely that state is to experience the spread of a civil war if the aforementioned neighbor is also experiencing one. 
+
+Liberal theories promote economic integration as one of the most important causes of peace in interstate relations, yet economic integration can also be a real vulnerability in the face of civil war contagion. I proceed with a theoretical discussion on contagion processes and the detrimental effects of strong economic ties on the spread of civil war. I do this by referencing the work done on economic ties ameliorating interstate conflict and explain how these ties can actually have the opposite effect with regards to the spread of civil war. I then describe the data and empirical framework used. Third, I interpret the empirical results in a substantive manner. Finally, I conclude with a brief overview on what these results mean for future research.  
+
+\subsection*{Geographic Proximity}
+A wide body of literature details the effects of international externalities on the spread of civil conflict. First, geography matters in the study of civil war. \citet{HegreSambanis2006} find that the positive effect of a neighboring conflict on the likelihood of civil war remains robust under a variety of possible specifications in their sensitivity analysis. The consequences of civil war are rarely confined to their state of origin and are most likely also going to be felt by the state's immediate neighbors \citep{Kathman2002b, MurdochSandler2002, Beardsley2011}. 
+
+Countries experiencing a civil conflict can become hazardous to the peace in their neighborhood in a few different ways \citep{BuhaugGleditsch2008, MurdochSandler2002, MurdochSandler2004, Gleditsch2007, Schultz2010, GleditschSalehyanSchultz2008, Beardsley2011}. Geographical proximity allows for civil wars to create new tensions between neighbors based on the spillover effects of the fighting. In some situations, these unfortunate spillover effects can turn into an interstate war involving the neighborhood. In others, civil war in one state can spark a separate civil war in a neighbor \citep{GleditschSalehyanSchultz2008}. Additionally, geographical proximity allows for transnational networks to have a stronger effect on the process of contagion.
+
+\citet{BuhaugGleditsch2008} determine that situations in which states pose a risk to their neighborhood's peace beyond the mere clustering of shared country characteristics that may make them more inclined to experience civil conflict, such as regime type or development level. Additionally, \citet{BuhaugGleditsch2008} find that their conclusion brings about new questions regarding the effect of inter-group linkages across borders. In particular, ethnic linkages can influence the willingness of particular groups to mobilize in violent behaviors in support of their transnational kin \citep{DavisMoore1997, Saideman1997, Saideman2002, Gleditsch2007}. These transnational ties create ways in which external sponsorship of insurgencies can spread conflict from one neighbor to another \citep{BuhaugGleditsch2008, CedermanGirardinGleditsch2009, Gleditsch2007, Schultz2010}. Transnational connections make cross-border movement of and support for insurgencies easier, particularly when the civil conflicts are related to ethnicity and secession or when ethnic cross-border ties are particularly strong \citep{BuhaugGleditsch2008}. 
+
+For instance, support from transnational ethnic communities can provide the group in conflict with resources that may be unavailable in their own country. These resources can include financial assistance, weapons, or even safe-havens within their neighbor's borders \citep{Gleditsch2007}. Civil wars can also provide examples of successful tactics to neighboring rebel groups. The tools learned by observation can be used by rebels to challenge and gain concessions from their own government \citep{Kuran1998}.
+
+Migration, particularly of refugees, plays a large role in how transnational ties can spur other civil conflicts in neighbors. Refugees from political violence tend to maintain ties to their homeland thus expanding their social networks; they may bring ideologies conducive to violence as well as arms and combatants; and may mobilize opposite to their host country's government \citep{SalehyanGleditsch2006}. Large populations of refugees create security concerns within their host country. Refugee flows, in conjunction with the consequences associated with transnational ties and geographic proximity, contribute to the unwanted spillover effects of civil war. % This combination of transnational ties and geographic proximity leads me to my first hypothesis:
+
+%\begin{hyp}
+%The onset of civil conflict is more likely among states with neighbors already experiencing civil conflict.
+%\end{hyp}
+
+%In contrast to the first two linkages, in the traditional interstate conflict framework, economic linkages tend to have a pacifying effect on the outbreak of conflict. \citet{Gleditsch2007} claims that trade between states can be viewed as an indicator of compatibility between states. Trade flows can represent the costs of violent conflict. \citet{Gleditsch2007} also finds that the higher the level of trade integration with direct neighbors, the less likely the state is to experience civil conflict.
+
+\subsection*{In Contrast to Peace Through Economic Ties}
+
+Previous work has demonstrated that transnational linkages, particularly ethnic, political, and economic, serve as factors contributing to the spread of civil war with. \citet{Gleditsch2007} finds ethnic and political linkages to have the strongest effect on the risk of the spread of civil war, but where do economic linkages stand? In the traditional liberal theory, economic linkages are primarily seen as having a dampening effect on the onset of interstate conflict. Central to this belief is that economic ties reflect the economic cost of war. Damaging these is disruptive to both states' economies, but does the ameliorative effect of economic ties remain as strong for civil war as it does for interstate war? 
+
+The incorporation of economic interdependence into the study of conflict is a result of the expansion of the democratic peace to the liberal peace, which includes the belief that trade, foreign investment, institutions, and a democratic government decrease the likelihood of militarized conflict. A wealth of literature cites economic ties as a deterrence to interstate conflict for its ability to provide information both about each state within the dyad and how they perceive their trading partner. Economic integration is not solely limited to trade, either. As \citet{Gartzke2007} finds, economic development, free markets, and monetary policy coordination are all key factors in decreasing the risk of interstate conflict. Furthermore, \citet{Bussmann2010} finds that foreign direct investment flows contribute to a decreased likelihood in the onset of interstate conflict. 
+
+First, \citet{Gleditsch2007} claims that economic ties between states can be viewed as an indicator of compatibility between states and \citet{DorussenWard2010} find that trade ties form connections and allows communication to take place both directly and indirectly through both third parties and international trade networks. \citet{DorussenWard2010} also find that indirect trade ties are becoming increasingly important to interstate peace, which suggest that communication effects may be more important than those of mediation.
+
+Additionally, economic integration reinforces institutional constraints and liberal norms by creating transnational ties that, rather than encouraging interstate conflict, encourage settlement and compromise \citep{Onealetal1996}. Economic integration can also serve as a measure of how much each state within the dyad values the status quo \citep{OnealRussett1997}. If both states place a high value on maintaining the economic status quo, they are each less likely to take action to challenge it. Lastly, \citet{GartzkeLiBohemer2001} find that economic linkages allow for states to credibly communicate and assess the other's resolve; financial markets can provide information with which to discern ``cheap talk," (see also \citet{GartzkeLi2003}).
+
+In reverse, we also know that conflict is detrimental to economic integration. Not only does it disrupt the flow of trade and trade routes, but also creates environments that are not conducive to doing business, decreases per capita income, stagnates economic growth, damages manufacturing supply chains, not to mention potential physical damage to facilities from nearby battles \citep{Onealetal1996, DorussenWard2010}. Investors can be risk averse and will not take part in an opportunity if the possibility that they will not reap the benefits is greater than the possibility of earning back their original investment. The perceived risk can come from a variety of plausible scenarios. For one, conflicts are associated with collateral damage. The destruction of factories, roads, resource extraction sites, and human capital due to battlefield proximity can disrupt supply chains causing an investment to be perceived as a risky venture. An abrupt end to investment flows can cause economic shocks and cause economic growth to stagnate which can make it impossible for states to trade, let alone provide for their own constituents. 
+
+In this sense, economic integration can be viewed as a representation of the potential economic costs of war, or put more simply, the monetary benefits that are given up when a non-violent compromise cannot be made. The greater the economic opportunity cost, the lower the expected utility of conflict. This is particularly important when relative dependency is taken into account; the economic opportunity costs of war are greatest for the most dependent country within the dyad. These are the states that have the most to lose if and when economic ties are severed. Decreased economic ties can then be seen as decreasing the cost of conflict as well as increasing the incentive to engage in cheap talk \citep{Bussmann2010, GartzkeLiBohemer2001, GartzkeLi2003, Fearon1995}.
+
+This relationship between conflict and decreasing potential for trade and investment can be translated to states experiencing a civil war. \citet{Gleditsch2007} finds that the higher the level of trade integration with direct neighbors, the less likely the state is to experience civil conflict. States' incentives to support conflicts in their neighbors are generally dictated by their level of affinity with or hostility toward their neighbor's existing regime and trade can be viewed as an indicator of this. \citet{Gleditsch2007} also finds the extent of economic ties with neighboring states to be an appropriate indicator of the costs of the spread of violent conflict while also providing incentives to aid in non-violent conflict settlement. While this may be true, the economic consequences of civil war do not remain isolated within the state experiencing conflict. 
+
+For instance, as \citet{MurdochSandler2002} find, civil wars do not only inhibit their own country's economic growth but their neighbors' as well. Intrastate conflict shares many of the same negative consequences that interstate conflict does, including: trade disruptions, increased perception of risk by potential investors, severance of manufacturing supply chains, collateral damage from nearby battles, and resources used to aid refugees, both within the state experiencing the civil conflict and the region. In sum, a civil war may result in a loss of both physical and human capital ultimately reducing steady-state income per capita for states and their immediate neighbors. 
+
+If, like \citet{MurdochSandler2002} claim, it is the direct disruption of economic activity and the resulting uncertainty that cause the spread of the negative effects of civil war to the state's neighbors, how do these domestic changes affect the onset of another civil war? One primary determinant of civil war is a poor economy \citep{FearonLaitin2003, CollierHoeffler1998, CollierHoeffler2004, MiguelSatyanathSergenti2004}. Changes in economic variables both create opportunities for as well as provide situations in which grievances become so acute that rebels pick up arms and mobilize for their cause. 
+
+\citet{CollierHoeffler2004} find that the cost of rebellion is a main determinant of whether or not the opportunity for rebellion exists. They find that male secondary education enrollment, per capita income, and the GDP growth rate all have statistically significant and substantive positive effects on the likelihood of civil war onset. They interpret these factors as proxies for earnings that are foregone in rebellion. When the economic cost of rebellion is less than the economic gain of continuing the status quo, the earnings that would be misplaced in the advent of rebellion facilitate conflict. Similarly, \citet{FearonLaitin2003} find that lower GDP per capita is substantively associated with civil war onset. Additionally, \citet{MiguelSatyanathSergenti2004} find economic factors to be the single most important determinant of the incidence of civil war. They use drastic changes in rainfall amounts to proxy for exogenous economic shocks and determine that a five percentage point decrease in economic growth increases the likelihood of a civil war in the following year by almost one-half. 
+
+\citet{DubeVargas2013} focus on exogenous shocks to Colombia's two largest exports, coffee and oil, and the resulting effect on the dynamics of civil war. Similar to \citet{CollierHoeffler2004}, their findings are consistent with the theory that workers choose employment in either a criminal sector or productive sector depending on whether earned wages surpass those which can be earned through criminal activity. They find evidence that a rise in the price of a labor intensive good will predict a decrease the risk of civil conflict while a rise in the price of either a capital intensive or fixed factor intensive good will increase the risk of civil conflict. 
+
+This is because the wages earned by harvesting coffee, for example, are greater than what one would earn as an enlisted rebel. Following a Heckscher-Olin framework, as external demand for coffee imports fall, wages decrease, unrest is sparked, and the onset of civil war becomes more likely as citizens seek income elsewhere. Alternatively, an increase in external demand for a natural resource, such as oil, would not cause a subsequent increase in wages, causing segments of the population to have more economic growth than others, who may even see negative growth, thus potentially inciting rebellion. While my theory does not disaggregate the factor endowments of the economies within the dyad, this is useful in conceptualizing how labor can move from a productive sector to the ``criminal" sector in search of higher wages. 
+
+Additionally, \citet{Buhaugetal2011} argue that geographical variation in income and wealth within countries is more important in the development of violence than aggregate income and wealth. They find that the location of conflict onsets is highly related to geographical variation in income, specifically, that conflicts are more likely both in locations with low income and poor regions in which pockets of wealth exist. These results fit in line with evidence presented by \citet{FearonLaitin2003, CollierHoeffler1998, CollierHoeffler2004, MiguelSatyanathSergenti2004, BlattmanMiguel2010, DubeVargas2013}; civil war onset is negatively correlated with both income levels and economic growth rates.
+
+So, for example, State A and State B have a high degree of economic integration within the dyad. if a civil war in State A is preventing them from importing a particular good from neighboring State B due to lack of demand or newly-dangerous supply routes, State B begins to experience inefficient production, thus lowering their wages to accommodate decreased demand. Income per capita decreases, economic growth slows, or even becomes negative, and this is where we see economic consequences of civil wars spread from the state experiencing the conflict to its neighbors, per \citet{MurdochSandler2002}. Poor economic conditions create a breeding ground for unrest and often become a catalyst for the onset of civil war \citep{CollierHoeffler2004}. The more economically dependent State B is upon State A, the greater the economic consequences should be, ultimately increasing the risk of civil war spreading from State A to neighboring State B.  
+ 
+These findings lead me to my hypothesis. Given past research on the importance of economic factors and their relationship to the onset of civil war, we know that poor economic conditions are a critical determinant of conflict onset. We also know that the consequences of civil war are not isolated within the borders of the state currently experiencing civil conflict. These effects, particularly hampered economic growth, spread to neighbors. Additionally, damaged economic ties with a country experiencing a civil conflict can have detrimental effects to the domestic economy and the strength of these effects are conditional upon how economically dependent one state is upon its neighbor. Thus: 
+
+\begin{hyp}The likelihood of civil conflict onset is stronger among states with a high level of economic integration with their neighbor currently experiencing civil conflict.\end{hyp}
+
+\subsection*{Data and Measures}
+My data consists of 2603 civil war-neighbor state-years from 1949 to 2006. The dependent variable comes from the Uppsala/PRIO Conflict Data Set\footnote{Version 4 - 2014}, identifying instances of armed conflict involving more than twenty-five casualties in a calendar year. This is coded 1 for the first year, and onward, of a conflict in a given state and 0 if no conflict took place during that particular year. This variable is given a one year lag 
+
+My independent variables of interest include the percentage of imports from the neighboring state experiencing a civil war, the percentage of exports to the neighboring state experiencing civil war, and whether or not the neighboring state is currently experiencing a civil war. The data on trade flow comes from the Correlates of War Trade Data Set\footnote{Version 3.0 - 2012} and is measured in millions of 2012 US dollars while instances of a neighboring civil war are also from the Uppsala/PRIO Conflict Data Set, like my dependent variable, coded 1 for the first year, and onward, of a conflict in a given state and 0 if no conflict was experienced during that year. 
+
+I estimate two stripped down logit models. The first measures the effect that the percentage of imports from a neighboring state experiencing a civil war has on the likelihood of civil war contagion.
+\footnotesize
+\begin{align}
+Pr(contagion) = \Lambda(\beta_{cons} &+ \beta_{Imports}Imports + \beta_{Neighbor}Neighbor + \beta_{Contiguity}Contiguity)
+ % + \beta_{Controls}Controls)
+\end{align}\label{eqn:1}
+\normalsize
+The second model the effect that the percentage of exports to a neighboring state experiencing a civil war has on the probability that civil war will spread from one neighbor to another.
+\footnotesize
+\begin{align}
+Pr(contagion) = \Lambda(\beta_{cons} &+ \beta_{Exports}Exports + \beta_{Neighbor}Neighbor + \beta_{Contiguity}Contiguity)
+\end{align}\label{eqn:2}
+I have not yet included control variables in either of my models, though, I should include GDP/capita, terrain, 
+\subsection*{Results}
+\subsection*{Conclusion}
+
+%% References
+\newpage
+\bibliographystyle{apsr_fs}
+\bibliography{bibliography}
+
+\end{document}
